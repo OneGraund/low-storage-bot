@@ -41,9 +41,11 @@ while 1:
     strg = Storage()
     if strg.is_enough_gib():
         print('There is enough space on PC')
+        print(strg)
     else:
         send(f'‼️**AT SERVER**‼️\nLow amount of space on PC\nDetails:\n{str(strg)}', GROUP_ID)
         print('There is not enough space on PC')
+        print(strg)
     wait_hours = 24
     print(f'Waiting {wait_hours} hours')
     time.sleep(wait_hours * (60*60))
