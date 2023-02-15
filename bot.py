@@ -44,6 +44,6 @@ while 1:
     else:
         send(f'‼️**AT SERVER**‼️\nLow amount of space on PC\nDetails:\n{str(strg)}', GROUP_ID)
         print('There is not enough space on PC')
-    wait_min = 10
-    print(f'Waiting {wait_min} minutes')
-    time.sleep(wait_min * 60)
+    wait_hours = 24
+    print(f'Waiting {wait_hours} hours')
+    time.sleep(wait_hours * (60*60))
